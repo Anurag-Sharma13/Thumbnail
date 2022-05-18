@@ -25,7 +25,7 @@ download(uri, 'video.mp4', function(){
     file.close()
     ffmpeg({source:'video.mp4'})
 .on('filenames',(filenames)=>{
-    const data = fs.readFileSync('src/thumbnails/thumbnail_1.jpeg', 'binary')
+    const data = fs.readFileSync('src/thumbnails/thumbnail_1.jpeg', 'base64')
     res.status(200).json({data})
     console.log('created file names',filenames)
 })
