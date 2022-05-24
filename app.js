@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const { router } = require('./src/routes/router')
 
 
+app.use(express.json())
 app.use(router)
 
 

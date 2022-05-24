@@ -9,7 +9,7 @@ const { thumbnailGenerate, fun } = require('../controller/thumb');
 
 
 
-router.get('/thumbnail',thumbnailGenerate)
+router.post('/thumbnail',thumbnailGenerate)
 
 
     
